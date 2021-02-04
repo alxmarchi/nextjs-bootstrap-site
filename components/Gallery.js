@@ -1,8 +1,8 @@
 import React from 'react';
 import { SRLWrapper } from "simple-react-lightbox";
-import sert_1 from "../assets/images/sert_1.jpg";
-import sert_2 from "../assets/images/sert_2.jpg";
-import sert_3 from "../assets/images/sert_3.jpg";
+import sert_1 from "../public/images/about/sert_1.jpg";
+import sert_2 from "../public/images/about/sert_2.jpg";
+import sert_3 from "../public/images/about/sert_3.jpg";
 import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'

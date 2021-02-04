@@ -1,9 +1,6 @@
 import React from 'react';
 import Carousel from "react-bootstrap/Carousel"
 
-
-
-
 export default function CarouselBox({sliders}) {
 
     return (
@@ -11,7 +8,7 @@ export default function CarouselBox({sliders}) {
             {sliders.map((slider) => (
                 <Carousel.Item>
                     <img
-                        id={slider.id}
+                        key={slider.id}
                         className={slider.className}
                         src={slider.srcImage}
                         alt={slider.alt}
@@ -22,7 +19,7 @@ export default function CarouselBox({sliders}) {
                     </Carousel.Caption>
                 </Carousel.Item>
             ))}
-
+         
         </Carousel>
 
     )
