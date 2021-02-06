@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import Layout from "../components/layout";
+import {Map, YMaps} from "react-yandex-maps";
+import {Tab, Tabs} from "react-bootstrap";
 
 export default function Contacts() {
     return (
+        <YMaps>
         <Layout>
         <div>
     <h1>Сеть аптек в вашем городе:</h1>
@@ -25,6 +28,7 @@ export default function Contacts() {
 
 </div>
             </Layout>
+            </YMaps>
     )
 
 }

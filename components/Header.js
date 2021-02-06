@@ -26,29 +26,29 @@ function Header() {
 
         <Nav className="mx-auto">
     <Nav.Item>
-        <Link href="/">
-            <Nav.Link href="/" style={{color: 'black'}}>Главная</Nav.Link>
+        <Link href="/" passHref>
+            <Nav.Link style={{color: 'black'}}>Главная</Nav.Link>
         </Link>
 
     </Nav.Item>
     <Nav.Item>
-        <Link href="/about">
-            <Nav.Link href="/about"  style={{color: 'black'}}>О компании</Nav.Link>
+        <Link href="/about" passHref>
+            <Nav.Link style={{color: 'black'}}>О компании</Nav.Link>
         </Link>
     </Nav.Item>
     <Nav.Item>
-        <Link href="/production">
-            <Nav.Link href="/production" style={{color: 'black'}}>Продукция</Nav.Link>
+        <Link href="/production" passHref>
+            <Nav.Link  style={{color: 'black'}}>Продукция</Nav.Link>
         </Link>
     </Nav.Item>
     <Nav.Item>
-        <Link href="/offers">
-            <Nav.Link href="/offers" style={{color: 'black'}}>Пациентам</Nav.Link>
+        <Link href="/offers" passHref>
+            <Nav.Link style={{color: 'black'}}>Пациентам</Nav.Link>
         </Link>
     </Nav.Item>
     <Nav.Item>
-        <Link href="/contacts">
-            <Nav.Link href="/contacts" style={{color: 'black'}}>Где купить</Nav.Link>
+        <Link href="/contacts" passHref>
+            <Nav.Link  style={{color: 'black'}}>Где купить</Nav.Link>
         </Link>
     </Nav.Item>
 

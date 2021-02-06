@@ -43,9 +43,9 @@ export default function Home() {
           <title>Нетангин фито</title>
         </Head>
           <CarouselBox sliders={sliders}></CarouselBox>
-          <Container>
-              <p class="lead">*Нетангин фито (Netanging Fyto) — это растительные пастилки-леденцы для горла (БАД), содержащие 12 растительных компонентов и обладающие тремя активными действиями.</p>
-          </Container>
+          <div className="m-5">
+              <p className="lead">*Нетангин фито (Netanging Fyto) — это растительные пастилки-леденцы для горла (БАД), содержащие 12 растительных компонентов и обладающие тремя активными действиями.</p>
+          </div>
       </Layout>
   )
 }

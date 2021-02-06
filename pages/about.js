@@ -1,12 +1,16 @@
 import Link from 'next/link'
 import Layout from "../components/layout";
+import CarouselBoxAbout from "../components/CarouselBoxAbout";
+import Gallery from "../components/Gallery";
+import {Map, YMaps} from "react-yandex-maps";
 
 export default function About() {
     return(
+        <YMaps>
     <Layout>
      <> 
         <h1 className="m-5">Информация о компании</h1>
-    <CarouselBoxAbout></CarouselBoxAbout>
+    <CarouselBoxAbout/>
     <div className="m-5">
     <p>Sydler Remedies Pvt. Ltd. — Группа компаний Sydler — это ведущий производитель и экспортёр#nbsp; высококачественных и надежных лекарственных форм, фитопрепаратов, БАДов и пищевых добавок#nbsp;, а также нутрицевтиков, которые удовлетворяют взыскательные требования рынка по всему миру.</p>
     <h3 className="m-4">Сертификаты</h3>
@@ -20,5 +24,6 @@ export default function About() {
 
 </>
         </Layout>
+            </YMaps>
     )
 }
