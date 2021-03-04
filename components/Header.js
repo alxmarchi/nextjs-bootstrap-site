@@ -4,6 +4,23 @@ import logo from '../public/logo.png';
 import Nav from 'react-bootstrap/Nav'
 import Link from 'next/link'
 import Image from 'next/image'
+import styled from 'styled-components'
+
+
+const StyledNavLink = styled(Nav.Link)`
+  
+  color: black !important;;
+  
+
+  &:hover {
+    color: brown !important;
+  }
+  &:active {
+    font-weight: bold !important;
+  }
+  
+`;
+
 
 
 function Header() {
@@ -27,28 +44,28 @@ function Header() {
         <Nav className="mx-auto">
     <Nav.Item>
         <Link href="/" passHref>
-            <Nav.Link style={{color: 'black'}}>Главная</Nav.Link>
+            <StyledNavLink>Главная</StyledNavLink>
         </Link>
 
     </Nav.Item>
     <Nav.Item>
         <Link href="/about" passHref>
-            <Nav.Link style={{color: 'black'}}>О компании</Nav.Link>
+            <StyledNavLink>О компании</StyledNavLink>
         </Link>
     </Nav.Item>
     <Nav.Item>
         <Link href="/production" passHref>
-            <Nav.Link  style={{color: 'black'}}>Продукция</Nav.Link>
+            <StyledNavLink>Продукция</StyledNavLink>
         </Link>
     </Nav.Item>
     <Nav.Item>
         <Link href="/offers" passHref>
-            <Nav.Link style={{color: 'black'}}>Пациентам</Nav.Link>
+            <StyledNavLink>Пациентам</StyledNavLink>
         </Link>
     </Nav.Item>
     <Nav.Item>
         <Link href="/contacts" passHref>
-            <Nav.Link  style={{color: 'black'}}>Где купить</Nav.Link>
+            <StyledNavLink>Где купить</StyledNavLink>
         </Link>
     </Nav.Item>
 
